@@ -1,0 +1,497 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: verdana,tahoma,sans-serif;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+
+html{
+    font-size: 62.5%;
+   scroll-behavior: smooth;
+    scroll-padding-top:6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin: 2rem 0;
+    background:rgba(255, 51,153, .05) ;
+
+
+}
+.heading span{
+    color:rgb(215, 111, 128);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius:5rem;
+    background: #333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size:1.7rem;
+}
+.btn:hover{
+    background: pink;
+    color:#333;
+}
+header{
+    position:fixed;
+    top:0;left:0;right:0;
+    background-color: #fff;
+    padding:1rem 9%;
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+
+}
+header .logo span{
+    color:rgb(238, 121, 140);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+}
+ .navbar a:hover{
+    color:rgb(212, 45, 73);
+}
+header .icons a{
+    font-size:3rem ;
+    color:#333;
+    margin-left: 2rem;
+
+}
+.icons a:hover{
+    color:rgb(230, 101, 122);
+}
+header #toggler{
+    display:none ;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius:1.5rem ;
+    padding:1rem 1.5rem;
+    cursor: pointer;
+    border:0.5rem solid rgba(0,0,0,.3);
+    
+   
+}
+.Home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/flower/bool\ flo.webp)no-repeat;
+    background-size:cover;
+    background-position: center;
+
+}
+.Home .content{
+    max-width:100rem;
+}
+.Home .content h3{
+    font-size: 6rem;
+    color:#333;
+}
+.Home .content span{
+    font-size: 3.5rem;
+    color:rgb(225, 48, 77);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+.Home .content p{
+    font-size: 1.5rem;
+    color:#db2222;
+    padding:1rem 0;
+    line-height: 1.6;
+}
+.about .row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    flex-wrap:wrap ;
+    padding: 2rem 0;
+    padding-bottom:3rem ;
+}
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+     
+}
+.video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:  0 auto;
+    height: 100%;
+}
+.video-container video{
+    width: 100%;
+    border:1.5rem solid #fff;
+    border-radius:2.5rem ;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: auto;
+    object-fit: cover;
+    margin:0 auto;
+
+}
+.about .row.video-container h3{
+    position: absolute;
+    top:100%; transform: translate Y(-50%);
+    font-size: 3rem;
+    background:#fff ;
+    width: 100%;
+    padding:70rem 5rem ;
+    margin-left: 60rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.row.content{
+    flex:1 1 40rem;
+}
+.content h3{
+    font-size: 5rem;
+    color:#333;
+}
+.content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding: 5rem 0;
+    padding-top:1rem ;
+    line-height:1.5 ;
+}
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+
+}
+.icon{
+    background:#fff ;
+    border:1rem solid rgba(0, 0,0,.1);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1rem;
+
+}
+.icon.img{
+    height: 5rem;
+    margin-right:2rem ;
+}
+.icon h3{
+    color:#333 ;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.icon span{
+    color:#555;
+    font-size: 1.3rem;
+}
+ .box-container{
+display: flex;
+flex-wrap: wrap;
+gap:1.5rem;
+}
+.box{
+    flex:1 1 30rem;
+    box-shadow:0.5 1.5rem rgba(0,0,0,.1) ;
+    border-radius: 1rem;
+    border:.1rem solid rgba(0,0,0,.1) ;
+    position: relative;
+
+}
+
+ .discount{
+    position:absolute;
+    top:1rem;left:1rem;
+    padding: 3rem 0.2rem;
+    font-size: 2rem;
+    color:rgb(210, 80, 102);
+    background:rgba(255,51,153,.05) ;
+    z-index: 1;
+    border-radius: 5rem;
+}
+.image{
+    position: relative;
+    text-align: center;
+    padding-top: 3rem;
+    overflow:hidden
+}
+.image img{
+    height: 25rem;
+    border-radius: 1rem;
+}
+.image img:hover{
+   transform: scale(1.1);
+}
+.ico{
+   position: absolute;
+   bottom:0;left:0;right:0;
+   display: flex;
+}
+.ico a{
+  margin-top: 1rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  width: 50%; 
+  background: rgb(245, 123, 143); 
+  color: #fff;
+}
+.ico .cart-btn{
+     border-left: 1rem solid #fff7;
+     border-right: 1rem solid #fff7;
+     width: 100%;
+}
+.ico a:hover{
+   background: #333; 
+}
+.content{
+  padding:2rem;
+  text-align: center;  
+}
+.content h3{
+   font-size: 2.5rem;
+   color: #333;
+
+}
+.content .price{
+    font-size: 2.5rem;
+    color: rgb(211, 105, 122);
+    font-weight: bolder;
+    padding-top: 1rem;
+ 
+ }
+ .price span{
+    font-size: 2.5rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+ }
+ .review.box-container{
+     display: flex;
+     flex-wrap:wrap ;
+     gap:1.5;
+
+ }
+.boxs{
+    flex:1 1 30rem;
+    box-shadow:0.5rem 1.5rem rgba(0, 0, 0, .1) ;
+    border-radius: 5rem;
+    padding: 3rem 2rem;
+    position: relative;
+
+ }
+ .stars i{
+    color:rgb(220, 116, 133) ;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+ }
+
+ .box p{
+    color:#999 ;
+    font-size: 1.5rem;
+    line-height:1.5 ;
+    padding-top: 2rem;
+ }
+ .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+ }
+ .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius:50%;
+    object-fit: cover;
+    margin-right: 1rem;
+ }
+ .fa-quote-right{
+    position: absolute;
+    bottom: 3rem;right: 3rem;
+    font-size: 6rem;
+    color:#eee;
+
+ }
+ .user h3{
+    font-size: 2rem;
+    color: #333;
+ }
+ .user span{
+    font-size: 1.5rem;
+    color: #999;
+ }
+ .row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   align-items: center;
+ }
+  form{
+    flex:1 1 40rem ; 
+    padding: 1rem 1.5rem;
+    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, .1);
+    border: 0.1rem solid rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: 3rem;
+ }
+ .row .image{
+    flex:1 1 40rem ; 
+ }
+ .row image img{
+  width: 100%;
+
+ }
+ .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border: 1rem solid rgba(0, 0, 0, .1);
+    border-radius:3rem ;
+    margin: 1rem 0;
+    width: 100%;
+ }
+.box:focus{
+    border-color:rgb(234, 83, 108) ;
+ }
+ form textarea{
+    height: 15rem;
+    resize: none;
+ }
+ .footer.box-container{
+    display: flex;
+    flex-wrap:wrap ;
+    gap:1.5rem;
+ }
+.bo{
+    flex: 1 1 25rem;
+ }
+.bo h3{
+   color:#333;
+   font-size: 2.5rem;
+   padding: 1rem 0;
+ }
+.bo a{
+    display: block;
+    color:#666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  .bo a:hover{
+    color:rgb(158, 58, 75);
+  }
+  .footer.credit{
+    text-align:center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:#333;
+    border-top:1rem solid rgba(0, 0, 0, .1);
+  }
+  .credit span{
+    color:rgb(241, 114, 135);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*meda queries*/
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+       
+    }
+    header{
+     padding: 1rem;
+    }
+    section{
+     padding:2rem;
+    }
+ 
+}
+@media(max-width:768px){
+    header.fa-bars{
+        display: block;
+    }
+    header .navbar {
+        position: absolute;
+        top:100%;left:0;right: 0;
+        background:#eee ;
+        border-top: 1rem solid rgba(0,0,0,.1);   
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 0, 0 0) ;
+    }
+    header .navbar a{
+        margin:1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border:1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+    .Home .content h3{
+      font-size:5rem;
+    }
+    .Home .content span{
+        font-size:2.5rem;
+      }
+      .icon h3{
+        font-size: 2rem;
+    }
+    .icon span{
+
+        font-size: 2.5rem;
+    }
+
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size:3rem ;
+
+    }
+}
